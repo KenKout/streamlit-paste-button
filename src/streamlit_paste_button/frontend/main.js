@@ -58,6 +58,11 @@ function onRender(event) {
         // Set the button's text font
         pasteButton.style.fontFamily = event.detail.theme.font;
 
+      
+        if (data.theme) {
+          // Change the body's background color to match the theme's background color
+          document.body.style.backgroundColor = data.theme.backgroundColor;
+        }
 
 //        pasteButton.onclick = event => {
 //          parseClipboardData();
